@@ -1,0 +1,20 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Task rating missing required d tag",
+  "kind": 30520,
+  "expect": "fail",
+  "reason": "Missing required tag: d",
+  "event": {
+    "kind": 30520,
+    "content": "{\"review\":\"Excellent service, very professional\"}",
+    "pubkey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": 1700000000,
+    "id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "sig": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "tags": [
+      ["p", "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"],
+      ["e", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"],
+      ["rating", "5"]
+    ]
+  }
+}

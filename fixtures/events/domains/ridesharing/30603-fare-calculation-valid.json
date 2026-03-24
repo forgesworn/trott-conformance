@@ -1,0 +1,18 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Valid fare calculation with all required tags",
+  "kind": 30603,
+  "expect": "pass",
+  "event": {
+    "kind": 30603,
+    "content": "{\"base_fare\":250,\"distance_charge\":480,\"time_charge\":120,\"total\":850}",
+    "pubkey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": 1700000500,
+    "id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "sig": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "tags": [
+      ["d", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:fare:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
+      ["task_id", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"]
+    ]
+  }
+}

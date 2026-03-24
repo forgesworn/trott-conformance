@@ -1,0 +1,22 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Payment receipt missing required payer tag",
+  "kind": 30535,
+  "expect": "fail",
+  "reason": "Missing required tag: payer",
+  "event": {
+    "kind": 30535,
+    "content": "{\"method\":\"lightning\",\"preimage\":\"abc123\"}",
+    "pubkey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": 1700000000,
+    "id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "sig": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "tags": [
+      ["d", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:receipt:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
+      ["task_id", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"],
+      ["payee", "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"],
+      ["amount", "2500"],
+      ["currency", "GBP"]
+    ]
+  }
+}

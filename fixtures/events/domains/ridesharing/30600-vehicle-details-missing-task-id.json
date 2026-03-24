@@ -1,0 +1,18 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Vehicle details missing required task_id tag",
+  "kind": 30600,
+  "expect": "fail",
+  "reason": "Missing required tag: task_id",
+  "event": {
+    "kind": 30600,
+    "content": "{\"make\":\"Toyota\",\"model\":\"Prius\",\"year\":2022,\"colour\":\"silver\",\"registration\":\"AB12 CDE\"}",
+    "pubkey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": 1700000000,
+    "id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "sig": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "tags": [
+      ["d", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:vehicle:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
+    ]
+  }
+}

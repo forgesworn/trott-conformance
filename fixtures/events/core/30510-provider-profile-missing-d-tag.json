@@ -1,0 +1,18 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Provider profile missing required d tag",
+  "kind": 30510,
+  "expect": "fail",
+  "reason": "Missing required tag: d",
+  "event": {
+    "kind": 30510,
+    "content": "{\"display_name\":\"Jane's Plumbing\",\"bio\":\"Licensed plumber, 10 years experience\"}",
+    "pubkey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "created_at": 1700000000,
+    "id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "sig": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "tags": [
+      ["provider_pubkey", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
+    ]
+  }
+}
