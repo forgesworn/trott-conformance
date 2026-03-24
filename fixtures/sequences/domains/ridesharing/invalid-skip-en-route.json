@@ -1,0 +1,8 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Invalid: skip provider_en_route and provider_arrived, jump to trip_active",
+  "domain": "ridesharing",
+  "expect": "fail",
+  "reason": "No transition from accepted to trip_active in ridesharing",
+  "statuses": ["requested", "accepted", "trip_active"]
+}

@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Dispute raised after task completion",
+  "domain": "core",
+  "expect": "pass",
+  "statuses": ["requested", "offers_open", "accepted", "in_progress", "completed", "disputed"]
+}

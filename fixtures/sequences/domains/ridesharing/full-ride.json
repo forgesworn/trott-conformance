@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Full ridesharing lifecycle with domain states",
+  "domain": "ridesharing",
+  "expect": "pass",
+  "statuses": ["requested", "offers_open", "accepted", "provider_en_route", "provider_arrived", "trip_active", "completed", "confirmed"]
+}

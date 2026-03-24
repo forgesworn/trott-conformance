@@ -1,0 +1,8 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Invalid: skip from requested directly to in_progress",
+  "domain": "core",
+  "expect": "fail",
+  "reason": "No transition from requested to in_progress",
+  "statuses": ["requested", "in_progress"]
+}

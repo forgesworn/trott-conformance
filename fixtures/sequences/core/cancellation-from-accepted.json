@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Cancel after accepting an offer",
+  "domain": "core",
+  "expect": "pass",
+  "statuses": ["requested", "offers_open", "accepted", "cancelled"]
+}

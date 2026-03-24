@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Cancel directly from requested state",
+  "domain": "core",
+  "expect": "pass",
+  "statuses": ["requested", "cancelled"]
+}

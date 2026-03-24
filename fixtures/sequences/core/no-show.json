@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "No-show during in-progress state",
+  "domain": "core",
+  "expect": "pass",
+  "statuses": ["requested", "offers_open", "accepted", "in_progress", "no_show"]
+}

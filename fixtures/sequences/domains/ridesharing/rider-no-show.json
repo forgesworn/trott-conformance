@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Rider no-show after driver arrives at pickup",
+  "domain": "ridesharing",
+  "expect": "pass",
+  "statuses": ["requested", "offers_open", "accepted", "provider_en_route", "provider_arrived", "no_show"]
+}

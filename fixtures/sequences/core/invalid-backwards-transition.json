@@ -1,0 +1,8 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Invalid: backwards transition from accepted to requested",
+  "domain": "core",
+  "expect": "fail",
+  "reason": "No transition from accepted back to requested",
+  "statuses": ["requested", "offers_open", "accepted", "requested"]
+}
