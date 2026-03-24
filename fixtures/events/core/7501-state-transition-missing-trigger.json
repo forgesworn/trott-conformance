@@ -1,0 +1,20 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "State transition missing the t (trigger) tag; the JSON Schema requires it but the Zod schema has no refine checks for tags, so this passes validation",
+  "kind": 7501,
+  "expect": "pass",
+  "event": {
+    "kind": 7501,
+    "content": "",
+    "pubkey": "bbcc11223344556677889900bbcc11223344556677889900bbcc112233445566",
+    "created_at": 1700000100,
+    "id": "e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6",
+    "sig": "eeff001122334455667788990011aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff001122334455667788990011aabbcc",
+    "tags": [
+      ["e", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"],
+      ["task_id", "task_abc123"],
+      ["status", "accepted"],
+      ["transition", "c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"]
+    ]
+  }
+}

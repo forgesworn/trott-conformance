@@ -1,0 +1,23 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Valid state transition input for a direct_accept trigger, transitioning from requested to accepted",
+  "kind": 7501,
+  "expect": "pass",
+  "event": {
+    "kind": 7501,
+    "content": "",
+    "pubkey": "bbcc11223344556677889900bbcc11223344556677889900bbcc112233445566",
+    "created_at": 1700000100,
+    "id": "c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+    "sig": "ccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccdd",
+    "tags": [
+      ["e", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"],
+      ["t", "direct_accept"],
+      ["task_id", "task_abc123"],
+      ["domain", "ridesharing"],
+      ["status", "accepted"],
+      ["transition", "d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5"],
+      ["provider_pubkey", "bbcc11223344556677889900bbcc11223344556677889900bbcc112233445566"]
+    ]
+  }
+}

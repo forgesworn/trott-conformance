@@ -1,0 +1,21 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Valid state machine definition with minimal but complete machine (3 states, transitions, profile)",
+  "kind": 7500,
+  "expect": "pass",
+  "event": {
+    "kind": 7500,
+    "content": "{\"id\":\"test-domain\",\"initial\":\"requested\",\"states\":{\"requested\":{\"on\":{\"accept\":{\"target\":\"accepted\"},\"cancel\":{\"target\":\"cancelled\"}}},\"accepted\":{\"on\":{\"complete\":{\"target\":\"completed\"},\"cancel\":{\"target\":\"cancelled\"}}},\"completed\":{\"type\":\"final\"},\"cancelled\":{\"type\":\"final\"}},\"profile\":{\"name\":\"Test Domain\",\"version\":\"1.0\",\"domain\":\"test_domain\",\"roles\":{\"requester\":\"client\",\"provider\":\"worker\"},\"kindRange\":[30600,30619],\"domainKinds\":{\"30600\":\"task_detail\"},\"tiers\":{\"p2p\":[\"TROTT-01\"],\"core\":[\"TROTT-01\"],\"discovery\":[\"TROTT-01\",\"TROTT-02\"],\"marketplace\":[\"TROTT-01\",\"TROTT-02\",\"TROTT-03\",\"TROTT-04\"],\"full\":[\"TROTT-01\",\"TROTT-02\",\"TROTT-03\",\"TROTT-04\",\"TROTT-05\"]}}}",
+    "pubkey": "aabb00112233445566778899aabb00112233445566778899aabb001122334455",
+    "created_at": 1700000000,
+    "id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+    "sig": "aabbccdd00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccdd",
+    "tags": [
+      ["title", "test_domain"],
+      ["t", "trott-task"],
+      ["domain", "test_domain"],
+      ["engine", "xstate@5", "state-machine"],
+      ["engine", "npm:@trott/sdk@^1.0.0", "guards", "actions"]
+    ]
+  }
+}
