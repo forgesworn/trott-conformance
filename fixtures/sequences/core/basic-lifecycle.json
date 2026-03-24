@@ -1,0 +1,7 @@
+{
+  "sdkVersion": "1.1.0",
+  "description": "Basic lifecycle: requested through to confirmed",
+  "domain": "core",
+  "expect": "pass",
+  "statuses": ["requested", "offers_open", "accepted", "in_progress", "completed", "confirmed"]
+}
