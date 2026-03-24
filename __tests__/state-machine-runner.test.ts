@@ -1,9 +1,11 @@
 import { describe, it, expect } from 'vitest'
-import { join } from 'node:path'
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { loadSequenceFixtures } from '../src/fixture-loader.js'
 import { runStateMachineTests } from '../src/runners/state-machine.js'
 
-const fixturesDir = join(import.meta.dirname, '..', 'fixtures')
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const fixturesDir = join(__dirname, '..', 'fixtures')
 
 describe('runStateMachineTests', () => {
   const fixtures = loadSequenceFixtures(join(fixturesDir, 'sequences'))

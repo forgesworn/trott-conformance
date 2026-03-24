@@ -8,7 +8,7 @@ const schemaMap = new Map<number, { safeParse: (data: unknown) => { success: boo
 
 for (const [name, value] of Object.entries(schemas)) {
   const match = name.match(/^kind(\d+)\w+Schema$/)
-  if (match && value && typeof (value as Record<string, unknown>).safeParse === 'function') {
+  if (match && value && typeof (value as unknown as Record<string, unknown>).safeParse === 'function') {
     schemaMap.set(Number(match[1]), value as typeof schemaMap extends Map<number, infer V> ? V : never)
   }
 }

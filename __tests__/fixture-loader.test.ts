@@ -1,8 +1,10 @@
 import { describe, it, expect } from 'vitest'
-import { join } from 'node:path'
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { loadEventFixtures, loadSequenceFixtures } from '../src/fixture-loader.js'
 
-const fixturesDir = join(import.meta.dirname, '..', 'fixtures')
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const fixturesDir = join(__dirname, '..', 'fixtures')
 
 describe('loadEventFixtures', () => {
   it('loads all event fixture JSON files', () => {

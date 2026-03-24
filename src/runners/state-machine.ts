@@ -1,6 +1,9 @@
 import { readFileSync, existsSync } from 'node:fs'
-import { join } from 'node:path'
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import type { SequenceFixture, TestResult } from '../types.js'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 interface Transition {
   target: string
@@ -20,8 +23,8 @@ interface MachineDefinition {
 function loadMachineDefinition(domain: string): MachineDefinition | undefined {
   // Try SDK dist first, then source
   const candidates = [
-    join(import.meta.dirname, '..', '..', 'node_modules', '@trott', 'sdk', 'dist', 'state-machine', 'definitions', `${domain}.json`),
-    join(import.meta.dirname, '..', '..', '..', 'trott-sdk', 'src', 'state-machine', 'definitions', `${domain}.json`),
+    join(__dirname, '..', '..', 'node_modules', '@trott', 'sdk', 'dist', 'state-machine', 'definitions', `${domain}.json`),
+    join(__dirname, '..', '..', '..', 'trott-sdk', 'src', 'state-machine', 'definitions', `${domain}.json`),
   ]
 
   for (const candidate of candidates) {
