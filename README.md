@@ -1,5 +1,7 @@
 # trott-conformance
 
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/TheCryptoDonkey?logo=githubsponsors&color=ea4aaa&label=Sponsor)](https://github.com/sponsors/TheCryptoDonkey)
+
 Conformance test suite for TROTT protocol implementations. Validates Nostr events against TROTT schemas and verifies state machine transitions using machine-readable JSON fixtures.
 
 Any language can consume the fixtures; the CLI provides a reference runner with TAP output.
