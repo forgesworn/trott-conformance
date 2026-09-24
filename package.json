@@ -3,6 +3,25 @@
   "version": "0.1.0",
   "description": "Conformance test suite for TROTT protocol implementations",
   "type": "module",
+  "homepage": "https://github.com/forgesworn/trott-conformance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forgesworn/trott-conformance.git"
+  },
+  "keywords": [
+    "trott",
+    "nostr",
+    "conformance",
+    "conformance-suite",
+    "test-suite",
+    "schema-validation",
+    "state-machine",
+    "fixtures",
+    "cli",
+    "tap",
+    "ridesharing",
+    "protocol-testing"
+  ],
   "bin": {
     "trott-conformance": "./dist/cli.js"
   },
