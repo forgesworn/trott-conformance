@@ -1,0 +1,57 @@
+# trott-conformance
+
+> Verifying that a TROTT protocol implementation handles Nostr events and
+> state machine transitions correctly requires a shared set of test cases, not
+> a reimplementation of the rules in every language. trott-conformance is a
+> conformance test suite: machine-readable JSON fixtures plus a reference CLI
+> runner with TAP output.
+
+Use it if you are building or maintaining a TROTT implementation, in any
+language, and need to check it against the same fixtures other implementations
+are tested against. The fixtures are self-contained JSON; the CLI is a
+convenience for TypeScript projects, not a requirement.
+
+## Getting Started
+
+```bash
+npx trott-conformance
+```
+
+Or install locally:
+
+```bash
+pnpm add -D trott-conformance
+pnpm trott-conformance
+```
+
+Filter to one kind of test, or one domain:
+
+```bash
+npx trott-conformance --schema --domain ridesharing
+```
+
+## Key Concepts
+
+- **Event fixtures** (`fixtures/events/`): a Nostr event plus an
+  `expect: 'pass' | 'fail'` verdict for schema validation, keyed by kind.
+- **Sequence fixtures** (`fixtures/sequences/`): an ordered list of statuses
+  plus an `expect` verdict for state machine transition validity, grouped by
+  domain.
+- **Domain**: a TROTT vertical (for example `ridesharing`) with its own event
+  kinds and status sequences.
+- **Language-agnostic fixtures**: the JSON fixtures carry no TypeScript
+  dependency; any test runner can load them and compare its own result to
+  `expect`.
+
+## API Surface
+
+- CLI flags: `--schema`, `--state-machine`, `--domain <name>`,
+  `--fixtures <path>` (load additional fixtures alongside the built-in set).
+- Exit code 0 when all fixture expectations match the runner's result, 1
+  otherwise.
+- Output is [TAP version 14](https://testanything.org/), consumable by any TAP
+  reader.
+
+## Optional
+
+Full fixture format and coverage table: [README.md](README.md)
