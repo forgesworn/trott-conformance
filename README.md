@@ -8,16 +8,13 @@ Any language can consume the fixtures; the CLI provides a reference runner with 
 
 ## Quick start
 
-```bash
-npx trott-conformance
-```
-
-Or install locally:
+Not on npm yet. The fixtures are plain JSON, so any implementation can load them straight from a clone:
 
 ```bash
-pnpm add -D trott-conformance
-pnpm trott-conformance
+git clone https://github.com/forgesworn/trott-conformance.git
 ```
+
+The reference CLI runs from a development checkout with `pnpm start`. It depends on the TROTT SDK, which is not on npm yet either, so it only installs next to a local copy of the SDK.
 
 ## CLI flags
 
@@ -32,13 +29,13 @@ Examples:
 
 ```bash
 # Schema tests only
-npx trott-conformance --schema
+pnpm start --schema
 
 # Ridesharing state machine tests only
-npx trott-conformance --state-machine --domain ridesharing
+pnpm start --state-machine --domain ridesharing
 
 # Include your own fixtures alongside built-in ones
-npx trott-conformance --fixtures ./my-fixtures
+pnpm start --fixtures ./my-fixtures
 ```
 
 ## Output

@@ -13,21 +13,19 @@ convenience for TypeScript projects, not a requirement.
 
 ## Getting Started
 
+Not on npm yet. The fixtures in `fixtures/` are plain JSON: clone the
+repository and load them from any language.
+
 ```bash
-npx trott-conformance
+git clone https://github.com/forgesworn/trott-conformance.git
 ```
 
-Or install locally:
+The reference CLI runs from a development checkout with `pnpm start`. It
+depends on the TROTT SDK, which is not on npm yet either, so it only installs
+next to a local copy of the SDK. Filter to one kind of test, or one domain:
 
 ```bash
-pnpm add -D trott-conformance
-pnpm trott-conformance
-```
-
-Filter to one kind of test, or one domain:
-
-```bash
-npx trott-conformance --schema --domain ridesharing
+pnpm start --schema --domain ridesharing
 ```
 
 ## Key Concepts
